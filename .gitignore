@@ -18,11 +18,17 @@ pawn.lock
 # Server/gamemode related files
 #
 
+# configurations
+mysql_settings.ini
+nex-ac_settings.cfg
+nex-ac_nop_settings.cfg
+
 # compiled settings file
+# server.cfg
+
 # keep `samp.json` file on version control
 # but make sure the `rcon_password` field is set externally
 # you can use the environment variable `SAMP_RCON_PASSWORD` to do this.
-# server.cfg
 
 # Plugins directory
 # plugins/
