@@ -1,0 +1,51 @@
+{
+	"user": "atver",
+	"repo": "arizona",
+	"contributors": [
+		"TrevorFair"
+	],
+	"website": "https://github.com/atver/arizona",
+	"entry": "gamemodes\\arzc.pwn",
+	"output": "gamemodes\\arzc.amx",
+	"local": true,
+	"builds": [
+		{
+			"name": "main",
+			"args": [
+				"-;+",
+				"-(+",
+				"-\\+",
+				"-d3",
+				"-Z+"
+			],
+			"includes": [
+				"pawno\\include",
+				"gamemodes"
+			],
+			"compiler": {}
+		}
+	],
+	"runtimes": [
+		{
+			"mode": "server",
+			"plugins": [
+				"mysql",
+				"crashdetect",
+				"pawncmd",
+				"pawnraknet",
+				"sscanf",
+				"streamer",
+				"TOTP",
+				"nativechecker"
+			],
+			"port": 7777,
+			"rcon_password": "passrcon",
+			"language": "Rus",
+			"mapname": "Arizona State",
+			"maxplayers": 50,
+			"extra": {
+				"long_call_time": "0"
+			}
+		}
+	]
+}

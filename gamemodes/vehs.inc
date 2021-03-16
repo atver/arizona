@@ -1,0 +1,744 @@
+// The file uses windows1251 encoding, please open it in your editor to view it without hieroglyphs.
+
+/* -------------------------------------------------------------------------- */
+/*                 Совместная доработка паблик мода Arizona RP                */
+/* -------------------------------------------------------------------------- */
+/* Идея с публичными доработками модов принадлежит авторам данной группы ВК:  */
+/* «atver | Создание Серверов | samp crmp mta ugmp» https://vk.com/atversion  */
+/* -------------------------------------------------------------------------- */
+/*           Ссылка на официальную страницу доработки данного мода:           */
+/*                    	https://github.com/Atver/Arizona                      */
+/*            Описания, списки измений, и всякое другое лежат там             */
+/* -------------------------------------------------------------------------- */
+/*      Все использованные в моде коды принадлежат соответсвующим авторам     */
+/*      Все авторства указываются не в моде, а на данной github странице:     */
+/*        https://github.com/Atver/Arizona/blob/master/CONTRIBUTORS.md        */
+/*      Если кого-то авторство не упомянуто, укажите его на той странице      */
+/* -------------------------------------------------------------------------- */
+/*     Ссылки на обсуждение данной доработки: (1) https://cutt.ly/RzV2l2R     */
+/*             (2) https://github.com/Atver/Arizona/discussions/1             */
+/*        Если у вас есть идеи, что добавить либо изменить, пишите туда       */
+/* -------------------------------------------------------------------------- */
+
+stock LoadVehicles() {
+    new str[230];
+    MopedVehicle[0] = J_AddStaticVehicleEx(473, -733.0216, -2033.5288, 5.2137, 114.0388, -1, -1, 100);
+    MopedVehicle[1] = J_AddStaticVehicleEx(473, -731.3942, -2020.5775, 5.2138, 60.6919, -1, -1, 100);
+    MopedVehicle[2] = J_AddStaticVehicleEx(462, 2229.9092, -1162.8600, 25.2544, 90.0000, -1, -1, 100);
+    MopedVehicle[3] = J_AddStaticVehicleEx(462, 2229.9680, -1166.4493, 25.2544, 90.0000, -1, -1, 100);
+    MopedVehicle[4] = J_AddStaticVehicleEx(462, 2230.0039, -1170.1107, 25.2544, 90.0000, -1, -1, 100);
+    MopedVehicle[5] = J_AddStaticVehicleEx(462, 2230.0129, -1173.5667, 25.2544, 90.0000, -1, -1, 100);
+    MopedVehicle[6] = J_AddStaticVehicleEx(462, 185.7913, -86.8502, 1.0242, 179.3730, -1, -1, 100);
+    MopedVehicle[7] = J_AddStaticVehicleEx(462, 187.2928, -86.8041, 1.0242, 179.3730, -1, -1, 100);
+    MopedVehicle[8] = J_AddStaticVehicleEx(462, 188.9126, -86.7857, 1.0242, 179.3730, -1, -1, 100);
+    MopedVehicle[9] = J_AddStaticVehicleEx(462, 1803.8710, -1934.2935, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[10] = J_AddStaticVehicleEx(462, 1802.3091, -1934.4722, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[11] = J_AddStaticVehicleEx(462, 1800.7444, -1934.5096, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[12] = J_AddStaticVehicleEx(462, 1798.9764, -1934.5636, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[13] = J_AddStaticVehicleEx(462, 1797.2513, -1934.2123, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[14] = J_AddStaticVehicleEx(462, 1795.5306, -1934.2208, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[15] = J_AddStaticVehicleEx(462, 1793.8691, -1934.2739, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[16] = J_AddStaticVehicleEx(462, 1792.1891, -1934.1670, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[17] = J_AddStaticVehicleEx(462, 1790.5085, -1934.1797, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[18] = J_AddStaticVehicleEx(462, 1788.8077, -1934.1653, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[19] = J_AddStaticVehicleEx(462, 1787.1278, -1934.1726, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[20] = J_AddStaticVehicleEx(462, 1785.4069, -1934.1787, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[21] = J_AddStaticVehicleEx(462, 1783.7061, -1934.1647, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[22] = J_AddStaticVehicleEx(462, 1782.0253, -1934.2069, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[23] = J_AddStaticVehicleEx(462, 1780.3660, -1934.1672, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[24] = J_AddStaticVehicleEx(462, 1778.6453, -1934.1472, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[25] = J_AddStaticVehicleEx(462, 1777.1245, -1934.1472, 12.8781, 0.0000, -1, -1, 120);
+    MopedVehicle[26] = J_AddStaticVehicleEx(462, -85.2464, -313.4781, 0.9261, 89.0466, -1, -1, 200);
+    MopedVehicle[27] = J_AddStaticVehicleEx(462, -85.2508, -314.6550, 0.9261, 89.0466, -1, -1, 200);
+    MopedVehicle[28] = J_AddStaticVehicleEx(462, -85.2205, -315.8159, 0.9261, 89.0466, -1, -1, 200);
+    MopedVehicle[29] = J_AddStaticVehicleEx(462, 1348.5857, 287.1873, 19.1417, 155.5508, -1, -1, 100);
+    MopedVehicle[30] = J_AddStaticVehicleEx(462, 1346.9385, 287.8734, 19.1410, 148.9387, -1, -1, 100);
+    MopedVehicle[31] = J_AddStaticVehicleEx(462, 1345.3339, 288.7947, 19.1238, 155.1355, -1, -1, 100);
+    MopedVehicle[32] = J_AddStaticVehicleEx(462, 1343.8882, 289.4364, 19.1251, 149.5628, -1, -1, 100);
+    MopedVehicle[33] = J_AddStaticVehicleEx(462, 1342.1022, 290.2208, 19.1264, 149.7179, -1, -1, 100);
+
+    CreateJobVehicle(JOB_PIZZA, 448, 686.0101, -1567.8412, 13.8424, 179.3411, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 687.9260, -1568.1115, 13.8423, 187.1912, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 690.6421, -1567.9688, 13.8416, 174.7638, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 694.3134, -1567.9852, 13.8404, 173.1375, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 695.6133, -1568.0505, 13.8410, 179.2073, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 696.9920, -1567.8237, 13.8421, 176.1919, 44, 44, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1471, 2242.9351, 10.4204, 94.2715, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1877, 2241.4224, 10.4204, 92.1274, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1769, 2240.3376, 10.4192, 91.8053, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1233, 2236.6389, 10.4198, 88.3445, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1876, 2235.4705, 10.4207, 92.8598, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1750.6255, 2233.9568, 10.4141, 87.8024, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1750.7683, 2227.1809, 10.4182, 93.9982, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.1205, 2225.6960, 10.4197, 91.3303, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.2262, 2224.5493, 10.4200, 87.7106, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.2468, 2220.2297, 10.4206, 90.0917, 3, 3, 100);
+    CreateJobVehicle(JOB_PIZZA, 448, 1751.6473, 2218.6179, 10.4188, 93.0859, 3, 3, 100);
+
+    CreateJobVehicle(JOB_NALOG, 498, 1520.5752, -1044.9807, 23.6544, 245.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_NALOG, 498, 1508.4005, -1041.8052, 23.4839, 263.8714, 6, 1, RES_CAR_TIME);
+
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4534, -2627.4004, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4180, -2617.3396, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4636, -2606.5388, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4990, -2596.2339, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.5344, -2586.1101, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4807, -2565.0964, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 2463.4768, -2575.5710, 13.9394, 269.3257, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1052.9906, 1920.8795, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1060.4225, 1920.7687, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1067.7998, 1920.8162, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1076.7444, 1921.1068, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1082.6561, 1920.6902, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_SCRAPER, 443, 1091.5621, 1920.9321, 11.3154, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 1362.7135, -1635.4933, 13.3804, 270.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 1362.9839, -1643.3324, 13.3804, 270.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 1362.9490, -1651.0912, 13.3804, 270.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 1362.8265, -1658.9108, 13.3804, 270.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 2412.0967, 2315.1018, 10.7409, 270.0538, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 2412.1970, 2319.7830, 10.7409, 270.0538, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 2412.2061, 2324.8198, 10.7409, 270.0538, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 2412.3059, 2329.8906, 10.7409, 270.0538, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, 2412.2432, 2335.1106, 10.7409, 270.0538, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, -1707.7457, 750.2225, 24.7211, 0.3466, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, -1707.7557, 762.7996, 24.8649, 1.7362, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_COLLECTOR, 428, -1708.4148, 799.6246, 24.8614, 359.9829, 0, 0, RES_CAR_TIME);
+    new meccar = CreateJobVehicle(JOB_MECHANIC, 525, 1132.5924, -1671.2059, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1132.6256, -1675.8069, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1132.5924, -1680.9872, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1132.5658, -1686.3081, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1132.5170, -1691.8745, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1132.5253, -1696.5049, 13.6245, 270.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1963.6002, 2170.7954, 10.6195, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1963.5939, 2162.4075, 10.6195, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1963.7297, 2154.1882, 10.6195, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 1963.7506, 2145.8806, 10.6195, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 195.1307, -251.7032, 1.3935, 180.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 199.8307, -251.6695, 1.3935, 180.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 204.5920, -251.6786, 1.3935, 180.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 209.5022, -251.6661, 1.3935, 180.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 2115.7346, 920.3560, 10.5940, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 2112.1680, 920.3069, 10.5940, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, 2122.3782, 920.3223, 10.5940, 360.0000, 0, 0, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.8577, 185.1595, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.7842, 188.8805, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.6499, 192.6978, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.5996, 204.5557, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.6047, 196.6815, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MECHANIC, 525, -2265.6130, 212.5199, 35.0016, 90.0000, 6, 6, RES_CAR_TIME);
+    new meccar2 = CreateJobVehicle(JOB_MECHANIC, 525, 2105.6604, 920.3301, 10.5940, 360.0000, 0, 0, RES_CAR_TIME);
+
+    for (new i = meccar; i <= meccar2; i++) {
+        format(str, sizeof(str), "{57B22C}Заправка %.1f$\n{FFFFFF}Бензина: %d/1000", BenzinCena[i], BenzinCount[i]);
+        Benzin[i] = CreateDynamic3DTextLabel(str, 0xFFFFFFFF, 0, 0, 0 + 2, 15.0, INVALID_PLAYER_ID, i);
+    }
+
+    new taxicar1 = CreateJobVehicle(JOB_TAXI, 420, 1063.6066, -1769.7174, 13.1191, 270.4277, 192, 74, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, 1063.4763, -1763.9045, 13.1837, 269.9459, 47, 204, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, 1063.6178, -1758.0051, 13.2073, 270.0033, 142, 130, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, 1063.1816, -1746.2520, 13.2464, 268.7969, 34, 237, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, 1063.5029, -1740.2009, 13.2739, 269.9979, 44, 230, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, 1063.6248, -1752.0446, 13.2353, 271.6056, 181, 126, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 580, 1099.1949, -1752.0975, 13.4337, 91.6905, 208, 88, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 400, -1964.7434, 85.6386, 27.7490, 90.2141, 178, 129, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -1964.7914, 100.6783, 27.4732, 90.2003, 255, 73, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -1964.9015, 105.5463, 27.4821, 90.2208, 195, 196, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -1975.9789, 83.7722, 27.4776, 270.1969, 49, 135, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -2265.7051, 109.1065, 34.9550, 87.7347, 244, 41, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 580, -2265.8032, 117.1957, 34.9244, 91.0050, 49, 52, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -2265.7004, 129.0082, 34.9765, 87.2122, 197, 155, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -2265.7092, 137.1786, 34.9807, 90.0094, 154, 223, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 420, -82.0441, 1221.9784, 19.4991, 180.3010, 141, 31, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 400, -2265.7561, 132.9658, 35.2533, 89.3718, 203, 140, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 400, -2265.9124, 105.2561, 35.2533, 88.6393, 141, 31, RES_CAR_TIME);
+    //CreateJobVehicle(JOB_TAXI,579,1099.0118,-1769.6941,13.3073,89.8011,173,171,RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, -1976.0138, 94.4992, 27.5771, 270.4413, 255, 73, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, -1976.7218, 100.9236, 27.5779, 269.7264, 208, 88, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, -2265.8000, 140.8414, 35.0865, 90.0758, 167, 201, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, 1098.9639, -1763.8184, 13.2379, 90.2006, 119, 47, RES_CAR_TIME);
+
+    new taxicar2 = CreateJobVehicle(JOB_TAXI, 579, -91.8075, 1222.2242, 19.6254, 179.6178, 244, 41, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, -2265.8301, 148.9468, 35.0553, 90.1196, 154, 223, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, -2266.0415, 125.1752, 35.0604, 89.2203, 167, 201, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 579, 1099.0118, -1769.6941, 13.3073, 89.8011, 173, 171, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 580, -1964.7856, 98.1349, 27.4428, 90.2135, 191, 233, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 580, -1976.2281, 91.2020, 27.4954, 271.0602, 119, 47, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 580, -1975.9998, 86.2862, 27.3927, 269.9625, 178, 149, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 400, -86.8168, 1222.3741, 19.7994, 180.9398, 203, 140, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -1964.3918, 91.3585, 27.4403, 91.1045, 208, 88, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -1976.3547, 94.7711, 27.4394, 270.3279, 119, 47, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, 1062.0803, -1775.5881, 13.0959, 269.6692, 244, 41, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, 1099.4039, -1757.8578, 13.1014, 91.1775, 25, 1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -98.9229, 1222.0127, 19.4914, 180.5058, 244, 41, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -2265.3030, 113.1561, 34.9241, 87.9051, 173, 171, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TAXI, 415, -2265.7114, 121.1617, 34.9238, 89.6195, 49, 52, RES_CAR_TIME);
+
+    for (new i = taxicar1; i <= taxicar2; i++) TaxiText[i] = CreateDynamic3DTextLabel("<< Такси для аренды >>", COLOR_GOLD, 0, 0, 1.4, 20.0, INVALID_PLAYER_ID, i);
+
+    CreateJobVehicle(JOB_TRUCKER, 514, -243.60000610352, -214.39999389648, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, -242.10000610352, -210.5, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, -240.60000610352, -206.39999389648, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, -239, -202.19999694824, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, -237.39999389648, -198, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, -235.80000305176, -193.80000305176, 2.0999999046326, 250.0, -1, -1, RES_CAR_TIME);
+
+    new avtobcar = CreateJobVehicle(1, 437, 1277.0647, -1805.6693, 13.3232, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -1796.3993, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -1810.6693, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -1815.6693, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -1825.6693, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -1830.6693, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1277.0647, -18356692.0000, 13.3332, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1200.7920, -1829.0747, 13.3332, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 1200.7728, -1834.2271, 13.3332, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2794.7163, 1292.5970, 10.7482, 180.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2788.2739, 1292.6022, 10.7482, 180.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2785.1704, 1292.6265, 10.7482, 180.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2778.5483, 1292.5355, 10.7482, 180.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2775.5710, 1292.6011, 10.7482, 180.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2767.6765, 1281.5607, 10.7482, 270.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2767.6912, 1278.4785, 10.7482, 270.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, 2767.7268, 1271.9985, 10.7482, 270.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2159.3274, 303.4340, 35.0653, 180.1683, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2167.1770, 303.3369, 35.0653, 180.1683, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2163.0901, 303.3921, 35.0653, 180.1683, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2175.4285, 303.3306, 35.0653, 180.1683, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2179.9001, 303.2414, 35.0653, 180.1683, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2210.0623, 296.2733, 35.0653, 360.0000, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2214.1479, 296.2141, 35.0653, 360.0000, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2222.5984, 296.1785, 35.0653, 360.0000, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2226.8101, 296.1526, 35.0653, 360.0000, 1, 6, RES_CAR_TIME);
+    CreateJobVehicle(1, 437, -2235.4680, 296.1688, 35.0653, 360.0000, 1, 6, RES_CAR_TIME);
+
+    new avtobcar2 = CreateJobVehicle(1, 437, 2767.7498, 1268.8586, 10.7482, 270.0000, 6, 1, RES_CAR_TIME);
+    for (new i = avtobcar; i <= avtobcar2; i++) AutobCarText[i] = CreateDynamic3DTextLabel("{E06C1F}Автобус\n{73B461}[Для аренды]", 0xFFFFFFFF, 0, 0, 0 + 2, 15.0, INVALID_PLAYER_ID, i);
+
+    CreateJobVehicle(18, 531, -270.2865, -112.2759, 3.0328, 73.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -272.4866, -119.7816, 3.0328, 73.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -273.5097, -123.8623, 3.0328, 73.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -274.8136, -127.9387, 3.0328, 73.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -286.9964, -111.2960, 2.1032, 254.6761, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -288.0367, -115.3296, 2.1032, 254.6761, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -290.2695, -123.6411, 2.1032, 254.6761, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -240.4103, -133.0202, 3.0328, 71.6191, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -239.2496, -128.9333, 3.0328, 71.6191, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -236.7027, -121.6897, 3.0328, 71.6191, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -253.8011, -120.8019, 3.0964, 255.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -254.9627, -124.7728, 3.0964, 255.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(18, 531, -257.4177, -132.8690, 3.0964, 255.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, -142.8849, -141.7535, 4.1843, 350.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, -152.1641, -140.0825, 4.1843, 350.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, -176.1418, -135.8917, 4.1843, 350.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, -185.0528, -134.2568, 4.1843, 350.0000, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, 68.1860, -172.3685, 2.2343, 358.1570, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, 58.8262, -172.0788, 2.2343, 358.1570, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, 33.7615, -170.2010, 2.2343, 358.1570, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(19, 532, 24.5828, -169.8550, 2.2343, 358.1570, 6, 1, RES_CAR_TIME);
+    CreateJobVehicle(20, 512, 127.0399, -6.0957, 1.7356, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(20, 512, 127.0399, -19.1657, 1.7356, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(20, 512, 127.0399, -33.1657, 1.7356, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(20, 512, 126.7599, -46.1657, 1.7356, 86.1029, 43, 1, RES_CAR_TIME);
+
+    new prodcar = CreateJobVehicle(3, 456, 901.3243, -1207.0145, 16.9306, 180.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 867.2712, -1207.0145, 16.9306, 180.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 830.9780, -1207.0145, 16.9306, 180.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 866.5544, -1245.3495, 14.9935, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 866.2090, -1255.6030, 14.9935, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 850.6572, -1293.2709, 13.6845, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1635.6804, 2303.1755, 10.6776, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1635.6804, 2312.7637, 10.6776, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1635.6804, 2340.8357, 10.6776, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1638.8076, 2358.9194, 10.8176, 90.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1593.5557, 2286.7019, 10.8176, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, 1593.5557, 2294.4829, 10.8176, 270.0000, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, -28.2736, 47.2231, 3.0746, 250.2569, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, -30.8920, 39.9784, 3.0746, 250.2569, 43, 1, RES_CAR_TIME);
+    CreateJobVehicle(3, 456, -33.3566, 33.0568, 3.0746, 250.2569, 43, 1, RES_CAR_TIME);
+
+    new prodcar2 = CreateJobVehicle(3, 456, -35.9212, 25.8792, 3.0746, 250.2569, 43, 1, RES_CAR_TIME);
+    for (new i = prodcar; i <= prodcar2; i++) {
+        CarproductType[i] = 0;
+        CarproductCount[i] = 0;
+        format(str, sizeof(str), "{D78787}Развозчик продуктов\n{FFFFFF}Загружено: %d/500", CarproductCount[i]);
+        Product[i] = CreateDynamic3DTextLabel(str, 0xFFFFFFFF, 0, 0, 0 + 3, 15.0, INVALID_PLAYER_ID, i);
+    }
+
+    CreateJobVehicle(JOB_TRUCKER, 591, -221.10000610352, -192.89999389648, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, -216.89999389648, -193.89999389648, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, -212.60000610352, -195.00000000000, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, -208.30000305176, -196.10000610352, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, -203.89999389648, -197.19999694824, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, -199.19999694824, -198.39999389648, 2.0999999046326, 165.0, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2283.7920, -2361.7754, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2345.8572, -2340.9146, 14.6157, 45.6939, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2349.1504, -2337.4753, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2352.7537, -2333.7805, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2356.8618, -2329.6274, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2361.9436, -2324.5420, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2365.4797, -2320.8169, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 2369.2466, -2317.1560, 14.6157, 45.2318, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2281.1604, -2359.0247, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2278.2554, -2356.1472, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2275.0803, -2352.8027, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2271.9958, -2349.7327, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2269.0525, -2346.7141, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2266.0740, -2343.7979, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 2262.9104, -2340.6689, 13.7764, 315.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.2295, 1438.1410, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.1770, 1443.2140, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.1367, 1448.1686, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.2121, 1453.6683, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.0680, 1458.7559, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 283.0476, 1463.7240, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 282.9244, 1468.6151, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 282.6463, 1473.5391, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 403, 282.6335, 1478.9354, 11.0016, 90.2786, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.4396, 1388.0272, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.5101, 1381.8278, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.5234, 1376.4355, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.6128, 1370.9796, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.6699, 1365.1796, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.6070, 1359.5594, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.4159, 1353.5386, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 584, 283.4125, 1347.8372, 11.5307, 90.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2818.0342, 898.4192, 11.0842, 360.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2827.2937, 898.4471, 11.0842, 359.3848, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2855.2280, 898.3457, 11.0842, 359.3848, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2801.5776, 968.6064, 11.0842, 180.9509, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2822.7566, 968.4808, 11.0842, 180.9509, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2828.0725, 968.5270, 11.0842, 180.9509, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 514, 2807.1160, 968.5431, 11.0842, 180.9509, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2875.9521, 937.7621, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.1030, 932.4043, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.1101, 926.7573, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.1948, 921.3900, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.1301, 916.0045, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.1934, 910.3636, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_TRUCKER, 591, 2876.2161, 905.1071, 11.2442, 91.0000, -1, -1, RES_CAR_TIME);
+
+    new jobcar1 = CreateJobVehicle(JOB_MUSOR, 408, 2229.1875, -2254.4700, 13.9927, 44.0000, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2221.9580, -2261.9353, 13.9927, 44.6070, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2214.5637, -2269.2820, 13.9927, 44.6070, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2207.1277, -2276.6458, 13.9927, 44.6070, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2201.8547, -2212.2295, 13.9927, 225.9129, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2194.7913, -2219.2048, 13.9927, 225.9129, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2187.3237, -2226.6399, 13.9927, 225.9129, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2204.7839, -2209.3281, 13.9927, 225.9129, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2313.1040, 2738.2644, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.0630, 2747.8459, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.0830, 2754.3857, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.3125, 2763.8857, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.2068, 2770.6584, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.1924, 2779.9573, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2261.4448, 2738.2727, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2313.1741, 2747.8047, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2313.0730, 2754.6177, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2312.9021, 2764.0999, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2500.2610, 354.2332, 35.6264, 64.7550, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2503.3643, 347.4843, 35.6264, 64.7550, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2504.9944, 343.8470, 35.6264, 64.7550, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2508.0747, 336.7984, 35.6264, 64.7550, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2510.9172, 329.2991, 35.6264, 64.7550, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2526.2654, 325.6854, 35.6264, 251.9357, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2527.4797, 322.0103, 35.6264, 251.9357, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2528.6089, 318.2935, 35.6264, 251.9357, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, -2530.7307, 310.9182, 35.6264, 251.9357, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2312.7605, 2770.5984, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateJobVehicle(JOB_MUSOR, 408, 2312.4712, 2780.1621, 11.1918, 90.1548, -1, -1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 433, 2779.2498, -2424.0659, 13.9536, 0.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 433, 2787.6499, -2424.0659, 13.9536, 0.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 433, 2779.3679, -2411.7988, 13.9536, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 433, 2787.8879, -2411.7988, 13.9536, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 548, 2778.1492, -2351.3198, 15.4136, 90.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 548, 308.8837, 2049.4634, 19.2729, 125.2743, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 331.5056, 1838.1539, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 331.6322, 1833.2600, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 331.6710, 1828.2039, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 329.1975, 1956.5177, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 329.2752, 1951.6531, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 433, 329.3937, 1946.5551, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1301.7191, 450.2716, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1306.0233, 450.4437, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1310.2528, 450.4818, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1314.5728, 450.4818, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1267.0791, 450.2716, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 433, -1271.0791, 450.2716, 7.6070, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 548, -1278.4851, 502.1362, 20.0314, 45.4174, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 548, -1305.7130, 501.4666, 20.0314, 45.4174, 44, 1, RES_CAR_TIME);
+
+    new jobcar2 = CreateJobVehicle(JOB_MUSOR, 408, 2190.3232, -2223.6926, 13.9927, 225.9129, -1, -1, RES_CAR_TIME);
+    for (new i = jobcar1; i <= jobcar2; i++) MusorCarText[i] = CreateDynamic3DTextLabel("Загружено: 0%/100%", 0xFFFFFFFF, 0, 0, 0, 15.0, INVALID_PLAYER_ID, i);
+
+    CreateTeamVehicle(TEAM_RADIO, 1, 582, 1668.5748, -1693.0895, 15.5849, 88.9162, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 582, 1668.5333, -1696.9873, 15.5849, 88.9162, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 582, 1668.4792, -1704.1243, 15.5849, 88.9162, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 582, 1668.5447, -1700.5864, 15.5849, 88.9162, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 582, 1668.4730, -1708.0327, 15.5849, 88.9162, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 488, 1668.1779, -1714.1947, 20.5305, 24.2905, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 445, 1646.1866, -1709.1534, 20.3465, 269.8665, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 445, 1646.2244, -1705.6493, 20.3519, 271.5544, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIO, 1, 426, 1646.2777, -1702.4156, 20.2413, 269.6584, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1959.5035, 584.8771, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1953.4304, 584.8774, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1950.3208, 584.8360, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1947.2937, 584.8109, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1941.2451, 584.8881, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 582, -1938.3971, 584.8671, 35.0797, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 585, -1932.2831, 585.4850, 34.6767, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 585, -1929.3038, 585.4374, 34.6767, 180.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOSF, 1, 488, -1904.0132, 437.0794, 35.7320, 358.0000, 5, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2674.3630, 1167.9310, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2669.0906, 1167.9784, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2664.0469, 1168.0015, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2659.0396, 1168.0638, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2653.9482, 1168.0232, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 582, 2643.9392, 1167.9216, 10.7936, 359.0000, 17, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_RADIOLV, 1, 488, 2645.1099, 1210.6233, 27.2443, 19.5005, 17, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_HSF, 1, 416, -2544.0093, 586.9008, 14.4942, 90.0000, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 416, -2543.9749, 592.9135, 14.4942, 90.0000, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 416, -2543.9980, 598.9249, 14.4942, 90.0000, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 416, -2543.9631, 604.8779, 14.4942, 90.0000, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 416, -2544.0520, 610.7438, 14.4942, 90.0000, 6, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 426, -2572.4500, 627.6297, 14.1200, 270.0000, 2, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 426, -2572.5378, 632.8685, 14.1200, 270.0000, 2, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 426, -2572.7861, 647.4091, 14.1200, 270.0000, 2, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HSF, 1, 426, -2572.7981, 658.3743, 14.1200, 270.0000, 2, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 416, 1593.6510, 1840.2689, 10.9372, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 416, 1597.9547, 1840.3273, 10.9372, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 416, 1602.2014, 1840.3251, 10.9372, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 416, 1606.3016, 1840.2615, 10.9372, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 416, 1610.6777, 1840.2601, 10.9372, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 426, 1620.2689, 1850.2357, 10.4923, 180.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLV, 1, 426, 1616.0072, 1850.2614, 10.4923, 180.0000, 7, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_BANK, 1, 428, 1407.0927, -1804.5696, 13.5566, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 428, 1407.0927, -1801.4896, 13.5566, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 428, 1407.0927, -1798.4095, 13.5566, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 533, 1407.4656, -1783.6151, 13.2766, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 533, 1407.4656, -1786.7612, 13.2766, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 580, 1407.1735, -1792.4543, 13.2166, 90.0000, 36, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BANK, 1, 487, 1535.4736, -1788.3174, 33.6588, 180.8290, 36, 0, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_HLS, 1, 416, 1124.1484, -1328.4871, 13.6256, 360.0000, 3, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLS, 1, 416, 1110.8409, -1328.4871, 13.6256, 360.0000, 3, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLS, 1, 416, 1097.7611, -1328.4871, 13.6256, 360.0000, 3, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLS, 1, 416, 1136.3181, -1344.0048, 13.8266, 270.0000, 3, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLS, 1, 416, 1136.3181, -1338.6698, 13.8266, 270.0000, 3, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_HLS, 1, 426, 1178.1130, -1339.1445, 13.6469, 270.4954, 3, 1, RES_CAR_TIME);
+
+    RMCars[0] = CreateTeamVehicle(TEAM_RM, 1, 579, 984.4582, 1747.0344, 8.4832, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[1] = CreateTeamVehicle(TEAM_RM, 1, 579, 984.4969, 1742.9897, 8.4832, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[2] = CreateTeamVehicle(TEAM_RM, 1, 579, 984.4497, 1738.9713, 8.4832, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[3] = CreateTeamVehicle(TEAM_RM, 1, 409, 950.2493, 1743.6547, 8.2832, 179.4013, 0, 0, RES_CAR_TIME);
+    RMCars[4] = CreateTeamVehicle(TEAM_RM, 1, 580, 984.4694, 1719.4099, 8.2822, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[5] = CreateTeamVehicle(TEAM_RM, 1, 580, 984.3997, 1723.1316, 8.2822, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[6] = CreateTeamVehicle(TEAM_RM, 1, 580, 984.5228, 1727.1056, 8.2822, 90.0000, 0, 0, RES_CAR_TIME);
+    RMCars[7] = CreateTeamVehicle(TEAM_RM, 1, 468, 947.9976, 1724.3361, 8.4332, 250.2157, 0, 0, RES_CAR_TIME);
+    RMCars[8] = CreateTeamVehicle(TEAM_RM, 1, 468, 948.0338, 1725.7334, 8.4332, 250.2157, 0, 0, RES_CAR_TIME);
+    RMCars[9] = CreateTeamVehicle(TEAM_RM, 1, 468, 947.8561, 1722.8571, 8.4332, 250.2157, 0, 0, RES_CAR_TIME);
+    RMCars[10] = CreateTeamVehicle(TEAM_RM, 1, 421, 971.9404, 1769.3865, 8.5141, 180.0000, 0, 0, RES_CAR_TIME);
+    RMCars[11] = CreateTeamVehicle(TEAM_RM, 1, 421, 971.8877, 1778.1040, 8.5141, 180.0000, 0, 0, RES_CAR_TIME);
+    RMCars[12] = CreateTeamVehicle(TEAM_RM, 1, 421, 971.9247, 1787.2513, 8.5141, 180.0000, 0, 0, RES_CAR_TIME);
+
+    YakuzaCars[0] = CreateTeamVehicle(TEAM_YAKUZA, 1, 409, -2446.0315, 133.0861, 34.7638, 272.9593, 0, 0, RES_CAR_TIME);
+    YakuzaCars[1] = CreateTeamVehicle(TEAM_YAKUZA, 1, 405, -2442.7847, 141.9793, 34.8783, 269.9984, 0, 0, RES_CAR_TIME);
+    YakuzaCars[2] = CreateTeamVehicle(TEAM_YAKUZA, 1, 405, -2434.5728, 141.2890, 34.8992, 269.8872, 0, 0, RES_CAR_TIME);
+    YakuzaCars[3] = CreateTeamVehicle(TEAM_YAKUZA, 1, 405, -2452.3250, 149.9029, 34.9176, 0.0004, 0, 0, RES_CAR_TIME);
+    YakuzaCars[4] = CreateTeamVehicle(TEAM_YAKUZA, 1, 505, -2462.1074, 154.1508, 35.0971, 0.0017, 0, 0, RES_CAR_TIME);
+    YakuzaCars[5] = CreateTeamVehicle(TEAM_YAKUZA, 1, 505, -2461.9407, 164.1662, 35.1050, 0.1147, 0, 0, RES_CAR_TIME);
+    YakuzaCars[6] = CreateTeamVehicle(TEAM_YAKUZA, 1, 550, -2452.7681, 167.5494, 34.8352, 359.5991, 0, 0, RES_CAR_TIME);
+    YakuzaCars[7] = CreateTeamVehicle(TEAM_YAKUZA, 1, 550, -2452.8779, 158.3322, 34.8348, 359.5431, 0, 0, RES_CAR_TIME);
+    YakuzaCars[8] = CreateTeamVehicle(TEAM_YAKUZA, 1, 530, -2465.9961, 174.6347, 34.8529, 229.8133, 0, 0, RES_CAR_TIME);
+
+    LCNCars[0] = CreateTeamVehicle(TEAM_LCN, 1, 409, 1472.1443, 2778.5149, 10.2784, 0.7317, 72, 0, RES_CAR_TIME);
+    LCNCars[1] = CreateTeamVehicle(TEAM_LCN, 1, 507, 1529.1272, 2818.3545, 10.5784, 90.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[2] = CreateTeamVehicle(TEAM_LCN, 1, 507, 1529.1272, 2822.7544, 10.5784, 90.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[3] = CreateTeamVehicle(TEAM_LCN, 1, 507, 1529.1272, 2827.2556, 10.5784, 90.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[4] = CreateTeamVehicle(TEAM_LCN, 1, 507, 1529.1272, 2831.7986, 10.5784, 90.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[5] = CreateTeamVehicle(TEAM_LCN, 1, 445, 1495.9521, 2878.5740, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[6] = CreateTeamVehicle(TEAM_LCN, 1, 445, 1500.3752, 2878.5740, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[7] = CreateTeamVehicle(TEAM_LCN, 1, 445, 1504.7489, 2878.5740, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[8] = CreateTeamVehicle(TEAM_LCN, 1, 445, 1509.1300, 2878.5740, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[9] = CreateTeamVehicle(TEAM_LCN, 1, 445, 1513.6281, 2878.5740, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[10] = CreateTeamVehicle(TEAM_LCN, 1, 457, 1424.0525, 2830.3674, 10.5784, 270.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[11] = CreateTeamVehicle(TEAM_LCN, 1, 457, 1424.0525, 2834.5801, 10.5784, 270.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[12] = CreateTeamVehicle(TEAM_LCN, 1, 457, 1424.0525, 2838.8606, 10.5784, 270.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[13] = CreateTeamVehicle(TEAM_LCN, 1, 468, 1459.1582, 2761.9631, 10.3589, 299.7231, 72, 0, RES_CAR_TIME);
+    LCNCars[14] = CreateTeamVehicle(TEAM_LCN, 1, 468, 1459.3872, 2760.5962, 10.3589, 299.7231, 72, 0, RES_CAR_TIME);
+    LCNCars[15] = CreateTeamVehicle(TEAM_LCN, 1, 468, 1459.5973, 2759.4551, 10.3589, 299.7231, 72, 0, RES_CAR_TIME);
+    LCNCars[16] = CreateTeamVehicle(TEAM_LCN, 1, 545, 1491.3921, 2878.7532, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[17] = CreateTeamVehicle(TEAM_LCN, 1, 545, 1486.9521, 2878.7532, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    LCNCars[18] = CreateTeamVehicle(TEAM_LCN, 1, 545, 1482.4321, 2878.7532, 10.5784, -180.0000, 72, 0, RES_CAR_TIME);
+    /////spawn cars
+    CreateVehicle(462, -1996.1914, 141.6479, 27.1831, -91.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.3361, 142.8497, 27.1000, -92.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.2572, 143.8463, 27.0936, -90.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.4172, 144.8463, 27.0936, -90.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.4172, 145.8463, 27.0936, -90.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.5313, 147.0531, 27.1000, -90.0000, -1, -1, 100);
+    CreateVehicle(462, -1996.5313, 148.0531, 27.1000, -90.0000, -1, -1, 100);
+    ////
+    CreateVehicle(462, 2834.0281, 1301.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1303.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1299.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1295.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1297.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1293.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1291.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0281, 1289.5220, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0198, 1287.0612, 10.2544, 90.0000, -1, -1, 100);
+    CreateVehicle(462, 2834.0198, 1285.0612, 10.2544, 90.0000, -1, -1, 100);
+
+
+    launchcr[0] = CreateVehicle(411, 1106.2285, -1497.4430, 15.5240, 237.6044, 0, 0, 65535);
+    LaunchInstall(launchcr[0]);
+    launchcr[1] = CreateVehicle(579, 1107.9171, -1491.9558, 15.5240, 250.4054, 0, 0, 65535);
+    LaunchInstall(launchcr[1]);
+    launchcr[2] = CreateVehicle(415, 1106.7799, -1486.9684, 15.5239, 239.7573, 0, 0, 65535);
+    LaunchInstall(launchcr[2]);
+
+    /////////
+
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2064.3135, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2068.5571, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2072.8169, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2068.5403, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2072.6775, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2076.7915, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2080.7405, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2084.6289, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 566, -2088.6370, -127.1712, 36.0, 0.0, 3, 3, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2091.8801, -116.5041, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2088.5317, -116.5175, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2084.4055, -116.4782, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2080.4607, -116.4310, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2076.8699, -116.4680, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2076.9592, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2081.2605, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 586, -2085.4004, -84.3098, 35.1, 180.0, 3, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 512, 387.7626, 2539.7524, 17.5, 180.0000, 8, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 512, 372.6773, 2539.7314, 17.5, 180.0000, 8, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 512, 357.7071, 2539.8103, 17.5, 180.0000, 8, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LICENSERS, 1, 512, 342.7742, 2540.0371, 17.5, 180.0000, 8, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_MERIALS, 1, 409, 1493.5521, -1232.6840, 14.2253, 90.0000, 1, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_MERIALS, 1, 400, 1488.0406, -1241.9492, 14.5053, 0.0000, 1, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_MERIALS, 1, 400, 1492.0406, -1241.9492, 14.5053, 0.0000, 1, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_MERIALS, 1, 421, 1496.0406, -1241.9492, 14.5053, 0.0000, 1, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_MERIALS, 1, 421, 1500.0406, -1241.9492, 14.5053, 0.0000, 1, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_MERIALS, 1, 487, 1496.0646, -1319.2361, 23.8105, 271.1159, 36, 0, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_ARMY, 1, 470, 2779.0759, -2463.3748, 13.3413, 0.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 470, 2787.8296, -2463.3748, 13.4013, 0.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 470, 2795.2532, -2463.3748, 13.3413, 0.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 470, 2779.4382, -2448.4253, 13.3413, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 470, 2787.9714, -2448.4253, 13.3413, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2779.2996, -2501.5625, 13.4800, 0.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2788.1150, -2501.4795, 13.4800, 0.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2779.2424, -2487.2236, 13.4800, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2787.9414, -2487.4436, 13.4800, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2782.7405, -2385.8730, 13.4846, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 500, 2786.9634, -2385.8938, 13.4846, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 431, 2781.6443, -2508.8384, 13.6213, 90.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 430, 2773.2017, -2586.2375, 1.5086, 181.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 430, 2766.3704, -2586.1531, 1.5086, 181.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 430, 2759.5679, -2586.1812, 1.5086, 181.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 430, 2752.3958, -2586.2485, 1.5086, 181.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 568, 2766.5215, -2380.0383, 13.2892, 180.000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMY, 1, 487, 2738.7603, -2532.1113, 30.0991, 270.000, 44, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 193.3046, 1920.6039, 17.3633, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 202.4676, 1920.6276, 17.3633, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 211.5237, 1920.5947, 17.3633, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 220.3487, 1920.5957, 17.3633, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 325.7481, 1907.8159, 17.3533, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 500, 327.8415, 1891.3217, 17.5553, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 330.5184, 1907.8237, 17.3533, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 335.8974, 1907.7181, 17.3533, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 500, 332.4980, 1890.9884, 17.5553, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 500, 336.6355, 1890.6882, 17.5553, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 431, 333.2228, 1873.4254, 17.6633, 90.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 431, 333.2157, 1867.7251, 17.6633, 88.7890, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 326.9826, 1991.7665, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 327.0089, 1987.2225, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 327.0025, 1982.8601, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 470, 327.0410, 1978.4329, 18.0673, 90.0372, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 568, 270.1578, 1864.1943, 17.4931, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYLV, 1, 568, 274.5790, 1864.2783, 17.4931, 180.0000, 44, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 430, -1443.9133, 492.8510, 0.3511, 88.6191, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 430, -1443.8811, 497.5771, 0.3511, 88.6191, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 430, -1439.1451, 505.3068, 0.3511, 88.6191, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 430, -1439.0535, 509.9458, 0.3511, 88.6191, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 470, -1275.2776, 451.8010, 7.0000, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 470, -1278.7659, 451.7856, 7.0000, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 470, -1282.1783, 451.7706, 7.0000, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 470, -1246.0464, 449.7414, 7.0000, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 470, -1242.1191, 449.9071, 7.0000, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 500, -1238.8083, 449.7130, 7.1600, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 500, -1235.8488, 449.7003, 7.1600, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 500, -1232.7705, 449.8040, 7.1600, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 431, -1328.6001, 445.7708, 7.2284, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 431, -1332.8990, 445.7443, 7.2284, 360.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 568, -1307.3472, 479.7873, 6.8884, 180.0000, 44, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_ARMYSF, 1, 568, -1304.1819, 479.7729, 6.8884, 180.0000, 44, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_SFPD, 1, 597, -1572.4406, 726.4545, -5.5320, 90.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 597, -1572.4470, 730.6609, -5.5320, 90.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 597, -1572.3829, 738.8925, -5.5320, 90.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 597, -1572.3927, 743.1780, -5.5320, 90.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 597, -1572.3944, 722.4703, -5.5320, 90.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 523, -1600.0791, 695.4734, -5.7520, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 523, -1608.4055, 695.5201, -5.7520, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 523, -1612.2900, 695.5635, -5.7520, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 523, -1616.7273, 695.5120, -5.7520, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 599, -1621.0616, 694.3557, -5.1920, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 599, -1628.7274, 694.2426, -5.1920, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 599, -1632.6772, 694.2825, -5.1920, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 525, -1640.1775, 682.1177, -5.3920, 270.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 525, -1640.4412, 678.0385, -5.3920, 270.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 525, -1640.4945, 673.9135, -5.3920, 270.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 525, -1640.5835, 669.6574, -5.3920, 270.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 601, -1584.3610, 750.1661, -5.5720, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 601, -1588.7886, 750.3608, -5.5720, 180.0000, 1, 15, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_SFPD, 1, 497, -1679.8936, 705.5067, 30.7259, 47.0480, 1, 15, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_FBI, 1, 415, -2439.8962, 501.1184, 29.6982, 212.9155, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 415, -2444.0156, 510.2275, 29.6827, 190.2442, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 415, -2429.8555, 515.0704, 29.6838, 213.7434, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 490, -2425.9792, 518.5383, 30.0720, 221.8816, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 490, -2422.3567, 521.5685, 30.0282, 224.3069, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 490, -2419.1121, 524.8293, 30.0198, 228.8295, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 490, -2416.6768, 528.4944, 30.0656, 238.0834, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 560, -2415.0549, 531.9811, 29.6054, 247.5954, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 560, -2413.6753, 535.8023, 29.5869, 257.3448, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 560, -2413.4897, 539.7662, 29.6041, 268.3483, 0, 0, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_FBI, 1, 497, -2479.0791, 522.6041, 51.2348, 90.5490, 0, 0, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_PDLV, 1, 525, 2256.0334, 2444.7419, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 525, 2260.3821, 2444.7588, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 598, 2251.8115, 2460.4656, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 598, 2260.4568, 2460.4656, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 598, 2269.1169, 2460.4917, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 598, 2273.6724, 2460.4656, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 598, 2277.9561, 2460.4656, 10.6057, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 601, 2269.1628, 2445.0547, 10.4757, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 601, 2273.4543, 2445.2400, 10.4757, 360.0000, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 523, 2251.5850, 2475.3740, 10.2757, 180.2271, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 523, 2256.1052, 2475.3740, 10.2757, 180.2271, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 523, 2269.0781, 2475.3740, 10.2635, 180.2271, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 523, 2273.1946, 2475.3740, 10.2635, 180.2271, 7, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_PDLV, 1, 497, 2342.6707, 2472.6902, 39.0477, 176.9832, 7, 1, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1574.3335, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1578.5250, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1583.3390, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1587.3566, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1591.5785, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 596, 1595.4098, -1711.3812, 6.0469, 0.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 523, 1546.8660, -1672.7449, 5.4869, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 523, 1546.8660, -1675.3800, 5.4869, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 523, 1546.8660, -1676.9354, 5.4869, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 523, 1546.8660, -1679.3687, 5.4869, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 523, 1546.8660, -1680.9663, 5.4869, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 599, 1528.5093, -1687.8639, 6.4869, -90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 599, 1528.5093, -1683.7883, 6.4869, -90.5400, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 497, 1552.8477, -1610.5408, 14.0469, 90.0000, 0, 1, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 525, 1526.6047, -1643.5181, 5.6177, 179.7686, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 525, 1530.5017, -1643.5320, 5.6177, 181.1458, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 427, 1534.7737, -1643.4572, 5.6181, 180.4515, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LSPD, 1, 427, 1538.6315, -1643.4637, 5.6177, 181.2151, 1, 16, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_LVPD, 1, 596, 614.4224, -596.8713, 16.9544, 270.9448, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 596, 613.7486, -601.6826, 16.9514, 270.0360, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 596, 615.7883, -591.2003, 16.9545, 269.4611, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 596, 616.6922, -584.9808, 16.9492, 269.8435, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 599, 621.4668, -605.8457, 17.3525, 270.5647, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 599, 621.4632, -610.5536, 17.3580, 270.5844, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 523, 636.0141, -611.2366, 15.9026, 358.7955, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 523, 633.9724, -611.4705, 15.9080, 0.4383, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 523, 631.4586, -611.6922, 15.9061, 359.6254, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 599, 637.3110, -542.4899, 17.3446, 179.4867, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 599, 637.2239, -559.2595, 17.3484, 179.3916, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 523, 638.1916, -611.2606, 15.8589, 3.0959, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 497, 614.5333, -549.9294, 23.1049, 215.0000, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 525, 669.0193, -620.7942, 16.1555, 360.0000, 1, 16, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_LVPD, 1, 525, 665.1553, -620.8279, 16.1555, 360.0000, 1, 16, RES_CAR_TIME);
+
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2188.4895, -2348.0159, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 482, -2190.0908, -2321.6782, 30.6460, 51.1400, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 413, -2192.9907, -2325.3586, 30.5650, 51.1400, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2187.4729, -2346.7527, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2186.4050, -2345.5525, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2208.3918, -2322.3496, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2212.6418, -2318.9141, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+    CreateTeamVehicle(TEAM_BIKERS, 1, 463, -2210.6152, -2320.5139, 30.0650, 200.0000, 0, 3, RES_CAR_TIME);
+
+    GroveCar[0] = CreateTeamVehicle(TEAM_GROOVE, 1, 600, 2485.0903, -1680.8488, 13.2813, 19.7400, 86, 86, RES_CAR_TIME);
+    GroveCar[1] = CreateTeamVehicle(TEAM_GROOVE, 1, 600, 2488.3083, -1680.7385, 13.2813, 19.7400, 86, 86, RES_CAR_TIME);
+    GroveCar[2] = CreateTeamVehicle(TEAM_GROOVE, 1, 492, 2506.0962, -1676.6655, 13.2813, -35.0400, 86, 86, RES_CAR_TIME);
+    GroveCar[3] = CreateTeamVehicle(TEAM_GROOVE, 1, 492, 2508.0857, -1666.6547, 13.2813, 11.1000, 86, 86, RES_CAR_TIME);
+    GroveCar[4] = CreateTeamVehicle(TEAM_GROOVE, 1, 492, 2501.6204, -1657.3187, 13.2813, 54.4800, 86, 86, RES_CAR_TIME);
+    GroveCar[5] = CreateTeamVehicle(TEAM_GROOVE, 1, 478, 2498.6013, -1684.0957, 13.2813, 13.5600, 86, 86, RES_CAR_TIME);
+    GroveCar[6] = CreateTeamVehicle(TEAM_GROOVE, 1, 482, 2505.4092, -1694.1656, 14.2813, 0.0000, 86, 86, RES_CAR_TIME);
+
+    VagosCar[0] = CreateTeamVehicle(TEAM_VAGOS, 1, 467, 2771.5327, -1623.8390, 10.8047, -27.6000, 6, 1, RES_CAR_TIME);
+    VagosCar[1] = CreateTeamVehicle(TEAM_VAGOS, 1, 467, 2776.0544, -1623.9009, 10.8047, -27.6000, 6, 1, RES_CAR_TIME);
+    VagosCar[2] = CreateTeamVehicle(TEAM_VAGOS, 1, 467, 2780.4949, -1623.8438, 10.8047, -27.6000, 6, 1, RES_CAR_TIME);
+    VagosCar[3] = CreateTeamVehicle(TEAM_VAGOS, 1, 474, 2779.6228, -1603.3281, 10.8047, -125.0400, 6, 1, RES_CAR_TIME);
+    VagosCar[4] = CreateTeamVehicle(TEAM_VAGOS, 1, 474, 2785.9009, -1603.1583, 10.8047, -125.0400, 6, 1, RES_CAR_TIME);
+    VagosCar[5] = CreateTeamVehicle(TEAM_VAGOS, 1, 478, 2769.9705, -1615.0035, 10.8047, -90.0000, 6, 1, RES_CAR_TIME);
+    VagosCar[6] = CreateTeamVehicle(TEAM_VAGOS, 1, 482, 2769.9705, -1606.8324, 10.8047, -90.0000, 6, 1, RES_CAR_TIME);
+
+    BallasCar[0] = CreateTeamVehicle(TEAM_BALLAS, 1, 566, 2011.8759, -1113.9398, 25.9790, 183.0003, 179, 179, RES_CAR_TIME);
+    BallasCar[1] = CreateTeamVehicle(TEAM_BALLAS, 1, 566, 2008.8434, -1129.2593, 25.0132, 90.0000, 179, 179, RES_CAR_TIME);
+    BallasCar[2] = CreateTeamVehicle(TEAM_BALLAS, 1, 566, 1985.5564, -1141.6482, 25.5184, 270.8255, 179, 179, RES_CAR_TIME);
+    BallasCar[3] = CreateTeamVehicle(TEAM_BALLAS, 1, 419, 1993.8208, -1141.5947, 25.3474, 270.0000, 179, 179, RES_CAR_TIME);
+    BallasCar[4] = CreateTeamVehicle(TEAM_BALLAS, 1, 419, 2001.6429, -1141.5061, 25.1574, 270.8112, 179, 179, RES_CAR_TIME);
+    BallasCar[5] = CreateTeamVehicle(TEAM_BALLAS, 1, 478, 1994.4465, -1095.7386, 24.9574, 344.2161, 179, 179, RES_CAR_TIME);
+    BallasCar[6] = CreateTeamVehicle(TEAM_BALLAS, 1, 478, 1998.7805, -1096.9128, 24.9574, 346.3077, 179, 179, RES_CAR_TIME);
+    BallasCar[7] = CreateTeamVehicle(TEAM_BALLAS, 1, 482, 2002.2770, -1097.8044, 24.9574, 345.6925, 179, 179, RES_CAR_TIME);
+
+    CoronosCar[0] = CreateTeamVehicle(TEAM_CORONOS, 1, 567, 2516.9424, -2005.0195, 13.2656, 140.4600, 2, 2, RES_CAR_TIME);
+    CoronosCar[1] = CreateTeamVehicle(TEAM_CORONOS, 1, 567, 2512.8218, -2004.6410, 13.2656, 140.4600, 2, 2, RES_CAR_TIME);
+    CoronosCar[2] = CreateTeamVehicle(TEAM_CORONOS, 1, 567, 2508.7004, -2004.2294, 13.2656, 140.4600, 2, 2, RES_CAR_TIME);
+    CoronosCar[3] = CreateTeamVehicle(TEAM_CORONOS, 1, 535, 2514.5210, -2014.6700, 13.2656, 90.0000, 2, 2, RES_CAR_TIME);
+    CoronosCar[4] = CreateTeamVehicle(TEAM_CORONOS, 1, 535, 2506.8916, -2014.6700, 13.2656, 90.0000, 2, 2, RES_CAR_TIME);
+    CoronosCar[5] = CreateTeamVehicle(TEAM_CORONOS, 1, 478, 2530.8352, -2007.6204, 13.6256, 89.5200, 2, 2, RES_CAR_TIME);
+    CoronosCar[6] = CreateTeamVehicle(TEAM_CORONOS, 1, 482, 2530.8257, -2011.7937, 13.6256, 89.5200, 2, 2, RES_CAR_TIME);
+
+    RifaCar[0] = CreateTeamVehicle(TEAM_RIFA, 1, 529, 2177.5630, -1808.2943, 13.3516, -27.4200, 135, 135, RES_CAR_TIME);
+    RifaCar[1] = CreateTeamVehicle(TEAM_RIFA, 1, 529, 2173.5139, -1808.3468, 13.3516, -27.4200, 135, 135, RES_CAR_TIME);
+    RifaCar[2] = CreateTeamVehicle(TEAM_RIFA, 1, 529, 2169.4451, -1808.4357, 13.3516, -27.4200, 135, 135, RES_CAR_TIME);
+    RifaCar[3] = CreateTeamVehicle(TEAM_RIFA, 1, 439, 2172.6543, -1790.9640, 13.3516, -90.0000, 135, 135, RES_CAR_TIME);
+    RifaCar[4] = CreateTeamVehicle(TEAM_RIFA, 1, 439, 2165.4509, -1790.9640, 13.3516, -90.0000, 135, 135, RES_CAR_TIME);
+    RifaCar[5] = CreateTeamVehicle(TEAM_RIFA, 1, 478, 2190.1111, -1796.2930, 13.3516, 0.0000, 135, 135, RES_CAR_TIME);
+    RifaCar[6] = CreateTeamVehicle(TEAM_RIFA, 1, 482, 2190.1111, -1804.5145, 13.3516, 0.0000, 135, 135, RES_CAR_TIME);
+
+    CarWolfs[0] = CreateTeamVehicle(TEAM_WOLFS, 1, 475, 2461.7173, -1424.3177, 23.5287, 90.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[1] = CreateTeamVehicle(TEAM_WOLFS, 1, 475, 2461.7173, -1413.2618, 23.5287, 90.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[2] = CreateTeamVehicle(TEAM_WOLFS, 1, 496, 2507.4966, -1424.3262, 28.1175, 360.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[3] = CreateTeamVehicle(TEAM_WOLFS, 1, 496, 2507.6265, -1416.9812, 28.1175, 360.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[4] = CreateTeamVehicle(TEAM_WOLFS, 1, 496, 2507.7156, -1409.9048, 28.1175, 360.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[5] = CreateTeamVehicle(TEAM_WOLFS, 1, 518, 2518.3918, -1419.1108, 28.1375, 360.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[6] = CreateTeamVehicle(TEAM_WOLFS, 1, 518, 2518.4070, -1411.1537, 28.1175, 360.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[7] = CreateTeamVehicle(TEAM_WOLFS, 1, 509, 2502.6436, -1402.2551, 28.0375, 279.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[8] = CreateTeamVehicle(TEAM_WOLFS, 1, 509, 2502.6597, -1400.8583, 28.0375, 279.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[9] = CreateTeamVehicle(TEAM_WOLFS, 1, 509, 2502.6648, -1399.6414, 28.0375, 279.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[10] = CreateTeamVehicle(TEAM_WOLFS, 1, 478, 2458.3862, -1407.9395, 23.7760, 90.0000, 37, 0, RES_CAR_TIME);
+    CarWolfs[11] = CreateTeamVehicle(TEAM_WOLFS, 1, 478, 2458.3862, -1419.0396, 23.7760, 90.0000, 37, 0, RES_CAR_TIME);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                 Совместная доработка паблик мода Arizona RP                */
+/* -------------------------------------------------------------------------- */
+/* Идея с публичными доработками модов принадлежит авторам данной группы VK:  */
+/* «atver | Создание Серверов | samp crmp mta ugmp» https://vk.com/atversion  */
+/* -------------------------------------------------------------------------- */
+/*     This Source Code Form is subject to the terms of the Mozilla Public    */
+/*       License, v. 2.0. If a copy of the MPL was not distributed with       */
+/*         this file. You can obtain one at http://mozilla.org/MPL/2.0        */
+/* -------------------------------------------------------------------------- */
